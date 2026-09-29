@@ -1,0 +1,582 @@
+/* ================= GENERAL ================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8f5;
+    color: #172019;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* ================= HEADER ================= */
+
+.header {
+    height: 75px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: rgba(247, 248, 245, 0.95);
+
+    border-bottom: 1px solid #dfe3dc;
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo-icon {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: #1f4d35;
+    color: white;
+
+    font-size: 15px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #58615a;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #1f4d35;
+}
+
+
+/* ================= HERO ================= */
+
+.hero {
+    min-height: 600px;
+
+    padding: 90px 7%;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+
+    gap: 60px;
+
+    background:
+        radial-gradient(
+            circle at 80% 20%,
+            #dcebdc 0,
+            transparent 35%
+        );
+}
+
+.hero-content {
+    max-width: 620px;
+}
+
+.tag,
+.small-title {
+    font-size: 12px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #50735a;
+}
+
+.hero h1 {
+    margin-top: 18px;
+
+    font-size: clamp(50px, 7vw, 85px);
+    line-height: 0.98;
+
+    letter-spacing: -4px;
+}
+
+.hero h1 span {
+    color: #507b59;
+}
+
+.hero p {
+    max-width: 520px;
+
+    margin-top: 30px;
+    margin-bottom: 35px;
+
+    color: #626b64;
+    font-size: 17px;
+}
+
+.primary-btn {
+    display: inline-block;
+
+    padding: 13px 23px;
+
+    background: #1f4d35;
+    color: white;
+
+    border-radius: 7px;
+
+    font-weight: bold;
+    font-size: 14px;
+
+    transition: 0.2s;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    background: #163b28;
+}
+
+
+/* ================= HERO CODE ================= */
+
+.hero-code {
+    background: #17221a;
+
+    border-radius: 16px;
+
+    padding: 35px;
+
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.15);
+
+    transform: rotate(1deg);
+}
+
+.hero-code pre {
+    color: #e5eee6;
+
+    font-family: Consolas, monospace;
+
+    font-size: 16px;
+
+    line-height: 1.9;
+}
+
+
+/* ================= SECTIONS ================= */
+
+.section {
+    padding: 100px 7%;
+    max-width: 1400px;
+    margin: auto;
+}
+
+.section-heading {
+    margin-bottom: 45px;
+}
+
+.section-heading h2,
+.compiler-heading h2 {
+    font-size: clamp(35px, 5vw, 55px);
+    letter-spacing: -2px;
+    margin-top: 8px;
+}
+
+
+/* ================= CONTENT CARD ================= */
+
+.content-card {
+    max-width: 900px;
+
+    background: white;
+
+    border: 1px solid #e2e6e0;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    color: #5e665f;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03);
+}
+
+.content-card p + p {
+    margin-top: 20px;
+}
+
+
+/* ================= LESSON GRID ================= */
+
+.lesson-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    gap: 40px;
+
+    align-items: stretch;
+}
+
+.lesson-text {
+    background: white;
+
+    border: 1px solid #e2e6e0;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    color: #5e665f;
+}
+
+.lesson-text p + p {
+    margin-top: 20px;
+}
+
+.lesson-text ul {
+    margin-top: 25px;
+    padding-left: 20px;
+}
+
+.lesson-text li {
+    margin-bottom: 10px;
+}
+
+
+/* ================= CODE BOX ================= */
+
+.code-box {
+    background: #17221a;
+
+    border-radius: 15px;
+
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+
+    overflow-x: auto;
+}
+
+.code-box pre {
+    color: #e9f0e9;
+
+    font-family: Consolas, monospace;
+
+    font-size: 15px;
+
+    line-height: 1.8;
+}
+
+
+/* ================= DATA TYPE CARDS ================= */
+
+.cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+.info-card {
+    background: white;
+
+    border: 1px solid #e2e6e0;
+
+    border-radius: 15px;
+
+    padding: 28px;
+
+    min-height: 230px;
+
+    transition: 0.2s;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.06);
+}
+
+.card-number {
+    font-size: 12px;
+    color: #77917d;
+
+    margin-bottom: 25px;
+}
+
+.info-card h3 {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.info-card p {
+    color: #697169;
+    margin-bottom: 15px;
+}
+
+.info-card pre {
+    background: #eef2ec;
+
+    padding: 10px;
+
+    border-radius: 6px;
+
+    font-family: Consolas, monospace;
+}
+
+
+/* ================= PRACTICE ================= */
+
+.practice-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 15px;
+}
+
+.practice-list button {
+    border: 1px solid #dce2da;
+
+    background: white;
+
+    border-radius: 10px;
+
+    padding: 20px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    color: #354039;
+
+    transition: 0.2s;
+}
+
+.practice-list button:hover {
+    background: #1f4d35;
+    color: white;
+
+    transform: translateY(-3px);
+}
+
+
+/* ================= COMPILER ================= */
+
+.compiler-section {
+    padding: 100px 7%;
+
+    background: #edf1eb;
+}
+
+.compiler-heading {
+    max-width: 800px;
+
+    margin: 0 auto 40px;
+}
+
+.compiler-heading p {
+    margin-top: 15px;
+
+    color: #657067;
+}
+
+.compiler-wrapper {
+    max-width: 1200px;
+
+    height: 650px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    border: 1px solid #dce2da;
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.compiler-wrapper iframe {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+}
+
+
+/* ================= SUMMARY ================= */
+
+.summary {
+    padding: 130px 7%;
+
+    text-align: center;
+
+    max-width: 900px;
+
+    margin: auto;
+}
+
+.summary h2 {
+    font-size: clamp(40px, 6vw, 65px);
+
+    letter-spacing: -3px;
+
+    margin: 10px 0 20px;
+}
+
+.summary p {
+    max-width: 600px;
+
+    margin: 0 auto 30px;
+
+    color: #626b64;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    padding: 45px 7%;
+
+    background: #17221a;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+footer .logo {
+    color: white;
+}
+
+footer p {
+    color: #aab5ac;
+
+    font-size: 14px;
+}
+
+footer .logo-icon {
+    background: #507b59;
+}
+
+.copyright {
+    margin-left: auto;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    nav {
+        display: none;
+    }
+
+    .hero {
+        grid-template-columns: 1fr;
+
+        padding-top: 70px;
+    }
+
+    .lesson-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .cards {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .practice-list {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .hero-code {
+        transform: none;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .hero {
+        padding: 60px 5%;
+    }
+
+    .hero h1 {
+        letter-spacing: -2px;
+    }
+
+    .section {
+        padding: 70px 5%;
+    }
+
+    .compiler-section {
+        padding: 70px 5%;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .practice-list {
+        grid-template-columns: 1fr;
+    }
+
+    .compiler-wrapper {
+        height: 600px;
+    }
+
+    footer {
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+    .copyright {
+        margin-left: 0;
+    }
+
+}
+

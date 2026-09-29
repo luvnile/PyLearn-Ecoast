@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PyLearn | Python Tutorial</title>
+
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+        <div class="logo">
+            <span class="logo-icon">Py</span>
+            <span>PyLearn</span>
+        </div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#basics">Basics</a>
+            <a href="#examples">Examples</a>
+            <a href="#compiler">Compiler</a>
+        </nav>
+
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <span class="tag">PYTHON TUTORIAL</span>
+
+            <h1>
+                Learn Python.<br>
+                <span>Write Code.</span>
+            </h1>
+
+            <p>
+                A simple beginner-friendly guide to learning Python
+                programming with examples you can try yourself.
+            </p>
+
+            <a href="#basics" class="primary-btn">
+                Start Learning
+            </a>
+
+        </div>
+
+        <div class="hero-code">
+
+<pre><code>name = "Python"
+
+print("Hello, " + name)
+
+for i in range(3):
+    print(i)</code></pre>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main>
+
+
+        <!-- ================= INTRODUCTION ================= -->
+        <section class="section" id="basics">
+
+            <div class="section-heading">
+
+                <span class="small-title">01 — INTRODUCTION</span>
+
+                <h2>What is Python?</h2>
+
+            </div>
+
+            <div class="content-card">
+
+                <p>
+                    Python is a high-level programming language known for
+                    its simple and readable syntax. It is commonly used for
+                    web development, automation, data analysis, artificial
+                    intelligence, and many other applications.
+                </p>
+
+                <p>
+                    Python is also a popular language for beginners because
+                    its syntax is relatively easy to understand.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= VARIABLES ================= -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span class="small-title">02 — VARIABLES</span>
+
+                <h2>Variables</h2>
+
+            </div>
+
+            <div class="lesson-grid">
+
+                <div class="lesson-text">
+
+                    <p>
+                        A variable is used to store information that can
+                        be used later in a program.
+                    </p>
+
+                    <p>
+                        In Python, you can create a variable simply by
+                        giving it a name and assigning a value.
+                    </p>
+
+                    <ul>
+                        <li>Text can be stored using quotation marks.</li>
+                        <li>Numbers can be stored without quotation marks.</li>
+                        <li>Variables can be changed later.</li>
+                    </ul>
+
+                </div>
+
+                <div class="code-box">
+
+<pre><code>name = "Elline"
+age = 19
+
+print(name)
+print(age)</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= DATA TYPES ================= -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span class="small-title">03 — DATA TYPES</span>
+
+                <h2>Basic Data Types</h2>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="info-card">
+                    <div class="card-number">01</div>
+                    <h3>String</h3>
+                    <p>
+                        Used for text.
+                    </p>
+
+<pre><code>"Hello"</code></pre>
+
+                </div>
+
+
+                <div class="info-card">
+                    <div class="card-number">02</div>
+                    <h3>Integer</h3>
+                    <p>
+                        Used for whole numbers.
+                    </p>
+
+<pre><code>25</code></pre>
+
+                </div>
+
+
+                <div class="info-card">
+                    <div class="card-number">03</div>
+                    <h3>Float</h3>
+                    <p>
+                        Used for decimal numbers.
+                    </p>
+
+<pre><code>3.14</code></pre>
+
+                </div>
+
+
+                <div class="info-card">
+                    <div class="card-number">04</div>
+                    <h3>Boolean</h3>
+                    <p>
+                        Represents True or False.
+                    </p>
+
+<pre><code>True</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= IF ELSE ================= -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span class="small-title">04 — CONDITIONS</span>
+
+                <h2>If / Else Statements</h2>
+
+            </div>
+
+            <div class="lesson-grid">
+
+                <div class="lesson-text">
+
+                    <p>
+                        Conditional statements allow a program to make
+                        decisions based on whether a condition is true
+                        or false.
+                    </p>
+
+                    <p>
+                        Python uses <strong>if</strong> and
+                        <strong>else</strong> to create these decisions.
+                    </p>
+
+                </div>
+
+                <div class="code-box">
+
+<pre><code>age = 18
+
+if age >= 18:
+    print("You are an adult.")
+else:
+    print("You are a minor.")</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= LOOPS ================= -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span class="small-title">05 — LOOPS</span>
+
+                <h2>Loops</h2>
+
+            </div>
+
+            <div class="lesson-grid">
+
+                <div class="lesson-text">
+
+                    <p>
+                        Loops allow you to repeat a block of code several
+                        times without writing the same code repeatedly.
+                    </p>
+
+                    <p>
+                        One common Python loop is the
+                        <strong>for loop</strong>.
+                    </p>
+
+                </div>
+
+                <div class="code-box">
+
+<pre><code>for number in range(5):
+    print(number)</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= FUNCTIONS ================= -->
+        <section class="section">
+
+            <div class="section-heading">
+
+                <span class="small-title">06 — FUNCTIONS</span>
+
+                <h2>Functions</h2>
+
+            </div>
+
+            <div class="lesson-grid">
+
+                <div class="lesson-text">
+
+                    <p>
+                        A function is a reusable block of code that performs
+                        a specific task.
+                    </p>
+
+                    <p>
+                        Functions are created using the
+                        <strong>def</strong> keyword.
+                    </p>
+
+                </div>
+
+                <div class="code-box">
+
+<pre><code>def greet():
+    print("Hello!")
+
+greet()</code></pre>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EXAMPLES ================= -->
+        <section class="section" id="examples">
+
+            <div class="section-heading">
+
+                <span class="small-title">07 — PRACTICE</span>
+
+                <h2>Try These Examples</h2>
+
+            </div>
+
+            <div class="practice-list">
+
+                <button onclick="loadExample('hello')">
+                    Hello World
+                </button>
+
+                <button onclick="loadExample('variables')">
+                    Variables
+                </button>
+
+                <button onclick="loadExample('condition')">
+                    If / Else
+                </button>
+
+                <button onclick="loadExample('loop')">
+                    For Loop
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= COMPILER ================= -->
+        <section class="compiler-section" id="compiler">
+
+            <div class="compiler-heading">
+
+                <span class="small-title">08 — CODE PLAYGROUND</span>
+
+                <h2>Try Python Yourself</h2>
+
+                <p>
+                    Write Python code and run it using the online compiler
+                    below.
+                </p>
+
+            </div>
+
+
+            <div class="compiler-wrapper">
+
+                <iframe
+                    src="https://onecompiler.com/embed/python"
+                    title="Online Python Compiler"
+                    frameborder="0"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SUMMARY ================= -->
+        <section class="summary">
+
+            <span class="small-title">YOU'VE REACHED THE END</span>
+
+            <h2>
+                Keep practicing.
+            </h2>
+
+            <p>
+                Programming becomes easier when you practice writing
+                and testing code. Try changing the examples above and
+                see what happens.
+            </p>
+
+            <a href="#compiler" class="primary-btn">
+                Open Compiler
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+
+        <div class="logo">
+            <span class="logo-icon">Py</span>
+            <span>PyLearn</span>
+        </div>
+
+        <p>
+            A simple Python learning website.
+        </p>
+
+        <p c
+```
